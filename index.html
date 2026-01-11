@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PQC-GF – Post-Quantum Cryptography Governance Framework</title>
+    <title>PQC-GF: Post-Quantum Cryptography Governance Framework</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;600&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -40,38 +40,39 @@
         }
         @keyframes grid { 0%{transform:translate(0,0)} 100%{transform:translate(60px,60px)} }
         .hero-content { text-align:center; z-index:2; max-width:1100px; padding:2rem; }
-        .logo { max-width:180px; margin-bottom:1.5rem; filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3)); }
-        h1 { font-family:'Playfair Display',serif; font-size:clamp(3.2rem,8vw,6.5rem); font-weight:900; margin:0.5rem 0; letter-spacing:-0.02em; }
-        .subtitle { font-family:'IBM Plex Mono',monospace; font-size:1.1rem; letter-spacing:0.15em; text-transform:uppercase; opacity:0.9; margin:1rem 0 2rem; }
-        .cta { display:inline-block; padding:1rem 2.5rem; background:var(--accent); color:white; text-decoration:none; font-weight:600; border-radius:50px; transition:all .3s; box-shadow:0 8px 25px rgba(251,54,64,0.35); }
-        .cta:hover { transform:translateY(-4px); box-shadow:0 14px 40px rgba(251,54,64,0.45); }
+        .logo { max-width:220px; margin-bottom:2rem; filter:drop-shadow(0 6px 15px rgba(0,0,0,0.4)); }
+        h1 { font-family:'Playfair Display',serif; font-size:clamp(3.5rem,9vw,7rem); font-weight:900; margin:0.5rem 0; letter-spacing:-0.02em; }
+        .subtitle { font-family:'IBM Plex Mono',monospace; font-size:1.2rem; letter-spacing:0.18em; text-transform:uppercase; opacity:0.92; margin:1.2rem 0 2.5rem; }
+        .cta { display:inline-block; padding:1.2rem 3rem; background:var(--accent); color:white; text-decoration:none; font-weight:600; border-radius:50px; transition:all .35s; box-shadow:0 10px 30px rgba(251,54,64,0.4); }
+        .cta:hover { transform:translateY(-5px); box-shadow:0 18px 50px rgba(251,54,64,0.5); }
         nav {
             position:fixed;
             top:0; left:0; right:0;
             background:rgba(255,250,255,0.97);
             backdrop-filter:blur(12px);
             z-index:100;
-            padding:1.2rem 2rem;
-            box-shadow:0 3px 25px rgba(0,0,0,0.08);
+            padding:1.3rem 2.5rem;
+            box-shadow:0 4px 30px rgba(0,0,0,0.1);
         }
-        nav ul { display:flex; justify-content:center; gap:2.5rem; flex-wrap:wrap; list-style:none; }
-        nav a { color:var(--primary); text-decoration:none; font-weight:600; font-size:0.95rem; text-transform:uppercase; letter-spacing:0.06em; position:relative; transition:color .3s; }
-        nav a::after { content:''; position:absolute; bottom:-6px; left:0; width:0; height:2.5px; background:var(--accent); transition:width .3s; }
+        nav ul { display:flex; justify-content:center; gap:2.8rem; flex-wrap:wrap; list-style:none; }
+        nav a { color:var(--primary); text-decoration:none; font-weight:600; font-size:1rem; text-transform:uppercase; letter-spacing:0.07em; position:relative; transition:color .35s; }
+        nav a::after { content:''; position:absolute; bottom:-7px; left:0; width:0; height:3px; background:var(--accent); transition:width .35s; }
         nav a:hover { color:var(--accent); }
         nav a:hover::after { width:100%; }
-        section { padding:6rem 2rem; max-width:1180px; margin:0 auto; }
-        h2 { font-family:'Playfair Display',serif; font-size:clamp(2.6rem,6vw,4.2rem); color:var(--primary); margin-bottom:0.8rem; font-weight:900; }
-        .section-subtitle { font-family:'IBM Plex Mono',monospace; color:var(--secondary); font-size:1rem; letter-spacing:0.25em; text-transform:uppercase; margin-bottom:2.5rem; }
-        .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:2rem; margin-top:3rem; }
-        .card { background:white; padding:2rem; border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,0.07); transition:transform .3s, box-shadow .3s; border-top:5px solid var(--accent); }
-        .card:hover { transform:translateY(-10px); box-shadow:0 20px 60px rgba(0,0,0,0.12); }
-        table { width:100%; border-collapse:collapse; margin:2rem 0; font-size:0.95rem; }
-        th,td { border:1px solid #ddd; padding:0.9rem; text-align:left; }
-        th { background:var(--primary); color:white; }
-        .fade-in { opacity:0; transform:translateY(40px); transition:all .9s ease-out; }
+        section { padding:7rem 2.5rem; max-width:1240px; margin:0 auto; }
+        h2 { font-family:'Playfair Display',serif; font-size:clamp(3rem,7vw,5rem); color:var(--primary); margin-bottom:1rem; font-weight:900; }
+        .section-subtitle { font-family:'IBM Plex Mono',monospace; color:var(--secondary); font-size:1.1rem; letter-spacing:0.3em; text-transform:uppercase; margin-bottom:3rem; text-align:center; }
+        .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:2.5rem; margin-top:3.5rem; }
+        .card { background:white; padding:2.5rem; border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.08); transition:transform .4s, box-shadow .4s; border-top:6px solid var(--accent); }
+        .card:hover { transform:translateY(-12px); box-shadow:0 25px 70px rgba(0,0,0,0.14); }
+        table { width:100%; border-collapse:collapse; margin:2.5rem 0; font-size:1rem; }
+        th,td { border:1px solid #e0e0e0; padding:1.1rem; text-align:left; }
+        th { background:var(--primary); color:white; font-weight:600; }
+        ul, ol { padding-left:2.2rem; margin:1.5rem 0; font-size:1.1rem; color:#444; }
+        .fade-in { opacity:0; transform:translateY(50px); transition:all 1s ease-out; }
         .fade-in.visible { opacity:1; transform:translateY(0); }
-        footer { background:var(--dark); color:white; text-align:center; padding:4rem 2rem; }
-        @media (max-width:900px) { section { padding:4rem 1.5rem; } nav ul { gap:1.5rem; font-size:0.9rem; } }
+        footer { background:var(--dark); color:white; text-align:center; padding:5rem 2.5rem; }
+        @media (max-width:900px) { section { padding:5rem 1.8rem; } nav ul { gap:1.8rem; font-size:0.95rem; } }
     </style>
 </head>
 <body>
@@ -91,60 +92,63 @@
 <section id="home" class="hero">
     <div class="hero-content">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/University_of_Bahrain_logo.png" alt="University of Bahrain" class="logo">
-        <div class="subtitle">University of Bahrain<br>College of Information Technology<br>Department of Information Systems</div>
-        <h1>Post-Quantum Cryptography<br>Governance Framework</h1>
-        <p style="font-size:1.4rem; max-width:780px; margin:1.5rem auto; opacity:0.92;">
-            A structured roadmap for organizations to transition to quantum-safe cryptography
+        <div class="subtitle">
+            University of Bahrain<br>
+            College of Information Technology<br>
+            Department of Information Systems
+        </div>
+        <h1>POST QUANTUM CRYPTOGRAPHY<br>AND ITS IMPLICATIONS</h1>
+        <p style="font-size:1.5rem; max-width:800px; margin:2rem auto; opacity:0.94;">
+            Senior Project • ITCY 499 • Academic Year 2025-2026 Semester 1
         </p>
-        <a href="#abstract" class="cta">Learn More</a>
+        <a href="#abstract" class="cta">Explore the Project</a>
     </div>
 </section>
 
 <section id="abstract">
     <div class="fade-in">
-        <div class="section-subtitle">Project Overview</div>
+        <div class="section-subtitle">Project Summary</div>
         <h2>Abstract</h2>
-        <p style="font-size:1.15rem; color:#444; max-width:860px; margin:0 auto;">
-            Quantum computers threaten current encryption (RSA, ECC) via Shor's algorithm and the "Harvest Now, Decrypt Later" risk. 
-            NIST standardized post-quantum algorithms in 2024, but organizations lack clear governance guidance for transition.
+        <p style="font-size:1.2rem; color:#333; max-width:950px; margin:0 auto 2rem;">
+            The emergence of quantum computing poses an unexpected threat to current cryptography, as quantum algorithms like Shor's algorithm will make widely used encryption methods such as RSA and ECC obsolete. The “Harvest Now, Decrypt Later” threat introduces another level of urgency. Although NIST standardized post-quantum algorithms in 2024, current IT governance standards lack clear transition requirements.
         </p>
-        <p style="font-size:1.15rem; color:#444; max-width:860px; margin:1.5rem auto;">
-            This project introduces <strong>PQC-GF</strong>, a five-domain framework (QRAS, PQPA, IAD, OAM, CAA) to guide systematic adoption of quantum-resistant cryptography.
-            Supported by 128 public survey responses, pre/post awareness training with 35 students, and four working prototypes.
+        <p style="font-size:1.2rem; color:#333; max-width:950px; margin:0 auto;">
+            This research developed the Post-Quantum Cryptography Governance Framework (PQC-GF), a comprehensive roadmap enabling organizations to systematically transition to quantum-resistant cryptographic systems. The PQC-GF consists of five domains: QRAS, PQPA, IAD, OAM, and CAA. Three surveys were conducted: an awareness survey with 128 public respondents, and pre- and post-presentation surveys for 35 cybersecurity students. Four cryptographic prototypes demonstrate the differences between classical cryptography and post-quantum cryptography in practical scenarios. The PQC-GF fills the existing gap by offering an applicable framework that is tailored based on organizational maturity level, risk profile, and availability of resources.
         </p>
     </div>
 </section>
 
 <section id="objectives">
     <div class="fade-in">
-        <div class="section-subtitle">Core Goals</div>
+        <div class="section-subtitle">Project Goals</div>
         <h2>Objectives</h2>
-        <ul style="font-size:1.1rem; color:#444; max-width:900px; margin:0 auto;">
-            <li>Analyze quantum threats to existing cryptographic systems</li>
-            <li>Study NIST post-quantum standards and migration strategies</li>
-            <li>Develop a practical governance framework for organizations</li>
-            <li>Measure awareness through surveys and educational intervention</li>
-            <li>Build & compare classical vs post-quantum cryptographic prototypes</li>
-        </ul>
+        <ol style="max-width:950px; margin:0 auto;">
+            <li>Analyze the quantum threat landscape and vulnerabilities in current cryptographic systems.</li>
+            <li>Evaluate NIST post-quantum standards and their applicability in organizational settings.</li>
+            <li>Identify gaps in existing IT governance frameworks regarding quantum readiness.</li>
+            <li>Design and validate a comprehensive governance framework (PQC-GF) for post-quantum transition.</li>
+            <li>Conduct surveys to measure awareness and assess the impact of educational interventions.</li>
+            <li>Develop and benchmark prototypes comparing classical and post-quantum cryptographic performance.</li>
+        </ol>
     </div>
 </section>
 
 <section id="methodology">
     <div class="fade-in">
-        <div class="section-subtitle">Our Approach</div>
+        <div class="section-subtitle">Research Approach</div>
         <h2>Methodology</h2>
         <div class="card-grid">
             <div class="card">
-                <h3>Research Method</h3>
-                <p>Design Science Research + mixed methods (surveys + prototypes)</p>
+                <h3>Research Design</h3>
+                <p>Design Science Research methodology combined with mixed methods: literature review, gap analysis, surveys, and prototype development.</p>
             </div>
             <div class="card">
-                <h3>Key Activities</h3>
-                <p>Gap analysis of existing frameworks • 3 surveys • 4 prototypes (Kyber, Dilithium, RSA, BB84)</p>
+                <h3>Key Components</h3>
+                <p>Three surveys (128 public + 35 students pre/post), gap analysis of COBIT, ISO 27001, NIST frameworks, and four working prototypes (Kyber, Dilithium, RSA, BB84 QKD).</p>
             </div>
             <div class="card">
-                <h3>Tools & Standards</h3>
-                <p>NIST PQC • COBIT 5 • ISO 27001 • Python-based implementations</p>
+                <h3>Standards & Tools</h3>
+                <p>Based on NIST PQC standards, COBIT 5, ISO/IEC 27001. Prototypes implemented using Python-based cryptographic libraries.</p>
             </div>
         </div>
     </div>
@@ -152,20 +156,20 @@
 
 <section id="results">
     <div class="fade-in">
-        <div class="section-subtitle">Key Outcomes</div>
+        <div class="section-subtitle">Findings & Impact</div>
         <h2>Results</h2>
         <div class="card-grid">
             <div class="card">
                 <h3>Awareness Survey (128 respondents)</h3>
-                <p>Only 39.1% knew about post-quantum cryptography despite high general cyber awareness</p>
+                <p>87.5% aware of general cybersecurity, but only 39.1% familiar with post-quantum cryptography.</p>
             </div>
             <div class="card">
-                <h3>Student Training (35 participants)</h3>
-                <p>Awareness increased from 20% → 45.7% after presentation</p>
+                <h3>Student Surveys (35 participants)</h3>
+                <p>Awareness rose from 20% to 45.7% after educational presentation. 85.7% found it useful/very useful.</p>
             </div>
             <div class="card">
-                <h3>Prototypes Performance</h3>
-                <p>Kyber: <20ms • Dilithium: 127–167ms • Practical & efficient</p>
+                <h3>Prototype Performance</h3>
+                <p>CRYSTALS-Kyber: <20 ms (text/image encryption)<br>CRYSTALS-Dilithium: 127–167 ms (signatures)<br>Practical and efficient for real-world use.</p>
             </div>
         </div>
     </div>
@@ -173,59 +177,57 @@
 
 <section id="demo">
     <div class="fade-in">
-        <div class="section-subtitle">See It in Action</div>
+        <div class="section-subtitle">Technical Demonstration</div>
         <h2>Demo</h2>
-        <p style="text-align:center; font-size:1.2rem; color:#555; margin:3rem 0;">
-            [Embed Elevator Pitch Video 1–3 min here]<br>
-            (YouTube / Vimeo embed code goes here)
+        <p style="text-align:center; font-size:1.3rem; color:#444; margin:3rem 0; max-width:900px; margin-left:auto; margin-right:auto;">
+            Watch the elevator pitch video (1–3 minutes) and see live walkthroughs of the four cryptographic prototypes: CRYSTALS-Kyber (ML-KEM), CRYSTALS-Dilithium (ML-DSA), RSA-2048 baseline, and BB84 QKD simulation.
         </p>
-        <p style="text-align:center; color:var(--secondary);">
-            Prototypes: CRYSTALS-Kyber • CRYSTALS-Dilithium • RSA-2048 • BB84 QKD simulation
-        </p>
+        <div style="text-align:center; background:#f8f9fa; padding:3rem; border-radius:20px; box-shadow:0 8px 30px rgba(0,0,0,0.06);">
+            [Video Embed Placeholder – Insert YouTube/Vimeo iframe here]
+        </div>
     </div>
 </section>
 
 <section id="team">
     <div class="fade-in">
         <div class="section-subtitle">Our Team</div>
-        <h2>Project Team</h2>
+        <h2>Project Team & Supervisor</h2>
         
-        <div style="text-align:center; margin:3rem 0;">
-            <p style="font-size:1.3rem; color:#555; margin-bottom:2rem;">
-                This is a Final Year Senior Project – Semester 1, Academic Year 2025/2026<br>
-                College of Information Technology – University of Bahrain
-            </p>
+        <p style="text-align:center; font-size:1.3rem; color:#555; margin:3rem 0 4rem; max-width:900px; margin-left:auto; margin-right:auto;">
+            This is a Final Year Senior Project completed during Semester 1 of the Academic Year 2025/2026 at the College of Information Technology — University of Bahrain.
+        </p>
 
-            <table style="max-width:900px; margin:0 auto 3rem;">
-                <thead>
-                    <tr><th>Name</th><th>ID</th><th>Email</th><th>LinkedIn</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Maryam Rashed Alkawari</td><td>202103597</td><td>maryam.r.alkuwari@gmail.com</td><td><a href="https://www.linkedin.com/in/maryam-alkuwari-5a2a5836b">Profile</a></td></tr>
-                    <tr><td>Saeeda Mohammed Alansari</td><td>202106563</td><td>saeedaalansary@gmail.com</td><td><a href="https://www.linkedin.com/in/saeeda-alansari-8221942a0">Profile</a></td></tr>
-                    <tr><td>Danah Mohammed Alkhan</td><td>202100476</td><td>danah.m.alkhan@gmail.com</td><td><a href="https://www.linkedin.com/in/danah-mohammed-alkhan">Profile</a></td></tr>
-                </tbody>
-            </table>
+        <table style="max-width:1000px; margin:0 auto 4rem;">
+            <thead>
+                <tr><th>Name</th><th>ID</th><th>Email</th><th>LinkedIn</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Maryam Rashed Alkawari</td><td>202103597</td><td>maryam.r.alkuwari@gmail.com</td><td><a href="https://www.linkedin.com/in/maryam-alkuwari-5a2a5836b" target="_blank" rel="noopener">Profile</a></td></tr>
+                <tr><td>Saeeda Mohammed Alansari</td><td>202106563</td><td>saeedaalansary@gmail.com</td><td><a href="https://www.linkedin.com/in/saeeda-alansari-8221942a0" target="_blank" rel="noopener">Profile</a></td></tr>
+                <tr><td>Danah Mohammed Alkhan</td><td>202100476</td><td>danah.m.alkhan@gmail.com</td><td><a href="https://www.linkedin.com/in/danah-mohammed-alkhan" target="_blank" rel="noopener">Profile</a></td></tr>
+            </tbody>
+        </table>
 
-          <h3 style="margin:2rem 0 1rem; color:var(--primary);">Supervisor</h3>
-<p style="font-size:1.2rem; color:var(--secondary);">
-    Ms. Alya Sayed Alkameli<br>
-    Computer Science Department<br>
-    <a href="mailto:aalkameli@uob.edu.bh" style="color:var(--secondary); text-decoration:none;">
-        <i class="fas fa-envelope"></i> aalkameli@uob.edu.bh
-    </a>
-</p>
-        </div>
+        <h3 style="text-align:center; margin:3rem 0 1.5rem; color:var(--primary); font-size:2rem;">Supervisor</h3>
+        <p style="text-align:center; font-size:1.4rem; color:var(--secondary);">
+            Ms. Alya Sayed Alkameli<br>
+            Computer Science Department<br>
+            <a href="mailto:aalkameli@uob.edu.bh" style="color:var(--secondary); text-decoration:none; font-size:1.2rem;">
+                <i class="fas fa-envelope"></i> aalkameli@uob.edu.bh
+            </a>
+        </p>
     </div>
 </section>
 
 <footer>
     <p>© 2025 • Post-Quantum Cryptography Governance Framework Project</p>
-    <p style="margin-top:1rem; opacity:0.8;">University of Bahrain • College of Information Technology</p>
+    <p style="margin-top:1.5rem; opacity:0.85; font-family:'IBM Plex Mono',monospace; font-size:1rem;">
+        University of Bahrain • College of Information Technology • Department of Information Systems
+    </p>
 </footer>
 
 <script>
-    const observer = new IntersectionObserver(e => e.forEach(el => el.isIntersecting && el.target.classList.add('visible')), {threshold:0.15});
+    const observer = new IntersectionObserver(e => e.forEach(el => el.isIntersecting && el.target.classList.add('visible')), {threshold:0.12});
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
     document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
