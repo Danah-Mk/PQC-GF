@@ -389,6 +389,7 @@
             nav ul {
                 gap: 1rem;
             }
+           
             section {
                 padding: 3rem 1.5rem;
             }
@@ -403,233 +404,278 @@
             opacity: 1;
             transform: translateY(0);
         }
+        /* Additional Styles for New Sections */
+        .logo {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        th, td {
+            border: 1px solid var(--secondary);
+            padding: 0.8rem;
+            text-align: left;
+        }
+        th {
+            background: var(--primary);
+            color: var(--light);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+        }
+        .diagram {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+        }
+        .video-placeholder {
+            background: #eee;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#problem">Problem</a></li>
-            <li><a href="#framework">Framework</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#prototypes">Prototypes</a></li>
-            <li><a href="#team">Team</a></li>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <p class="subtitle">University of Bahrain • Senior Project 2025</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/University_of_Bahrain_logo.png" alt="University of Bahrain Logo" class="logo">
+            <p class="subtitle">University of Bahrain • College of Information Technology • Department of Information Systems • Senior Project 2025</p>
             <h1>Post-Quantum Cryptography Governance Framework</h1>
             <p>A comprehensive roadmap enabling organizations to systematically transition from quantum-vulnerable cryptographic systems to quantum-safe solutions.</p>
             <a href="#framework" class="cta-button">Explore the Framework</a>
             <div class="team-info">
                 <p>Maryam Alkawari • Saeeda Alansari • Danah Alkhan</p>
-                <p>Supervised by Dr. Alya Sayed Alkameli</p>
+                <p>Supervised by Ms. Alya Sayed Alkameli</p>
             </div>
         </div>
     </section>
 
-    <section id="problem">
+    <section id="abstract">
         <div class="fade-in">
-            <p class="section-subtitle">The Challenge</p>
-            <h2>The Quantum Threat</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #555;">
-                Quantum computers have the potential to break the encryption protecting our banks, hospitals, governments, and businesses. Organizations must start preparing now, but most do not know how to begin.
-            </p>
-        </div>
-        <div class="problem-grid fade-in">
-            <div class="problem-card">
-                <h3>Discovery</h3>
-                <p>How do we find and assess all quantum-vulnerable systems?</p>
-            </div>
-            <div class="problem-card">
-                <h3>Selection</h3>
-                <p>Which post-quantum algorithm should we use, and where?</p>
-            </div>
-            <div class="problem-card">
-                <h3>Transition</h3>
-                <p>How do we migrate without breaking everything?</p>
-            </div>
+            <p class="section-subtitle">Project Summary</p>
+            <h2>Abstract</h2>
+            <p>The emergence of quantum computing poses an unexpected threat to current cryptography, as 
+quantum algorithms like Shor's algorithm will make widely used encryption methods such as 
+RSA and ECC obsolete. “Harvest Now, Decrypt Later” threat introduces another level of 
+urgency. Although NIST standardized post-quantum algorithms in 2024, current IT governance 
+standards have a lack of clear transition requirements. This research developed the Post-
+Quantum Cryptography Governance Framework (PQC-GF), a comprehensive roadmap 
+enabling organizations to systematically transition to quantum-resistant cryptographic systems. 
+The PQC-GF consists of five domains: (QRAS), (PQPA), (IAD), (OAM), and (CAA). Three 
+surveys were conducted, an awareness survey with 128 public respondents, and pre and post 
+presentation surveys for 35 cybersecurity students. Four cryptographic prototypes demonstrate 
+the differences between classical cryptography and post-quantum cryptography in practical 
+scenarios. The PQC-GF fills the existing gap offering an applicable framework that is tailored 
+based on organizational maturity level, risk profile, and availability of resources.</p>
         </div>
     </section>
 
-    <section id="framework">
+    <section id="objectives">
         <div class="fade-in">
-            <p class="section-subtitle">Our Solution</p>
-            <h2>The PQC-GF Framework</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #555;">
-                A comprehensive five-domain framework designed to guide organizations through quantum-safe transitions.
-            </p>
-        </div>
-        <div class="domains-grid fade-in">
-            <div class="domain-card">
-                <h3>QRAS</h3>
-                <div class="domain-name">Quantum Risk Assessment & Strategy</div>
-                <p>Establishing quantum threat understanding and strategic direction</p>
-            </div>
-            <div class="domain-card">
-                <h3>PQPA</h3>
-                <div class="domain-name">Post-Quantum Planning & Architecture</div>
-                <p>Designing quantum-safe target states and migration approaches</p>
-            </div>
-            <div class="domain-card">
-                <h3>IAD</h3>
-                <div class="domain-name">Implementation & Deployment</div>
-                <p>Executing post-quantum cryptography implementations</p>
-            </div>
-            <div class="domain-card">
-                <h3>OAM</h3>
-                <div class="domain-name">Operations & Maintenance</div>
-                <p>Managing ongoing post-quantum cryptography operations</p>
-            </div>
-            <div class="domain-card">
-                <h3>CAA</h3>
-                <div class="domain-name">Compliance & Assurance</div>
-                <p>Ensuring regulatory compliance and stakeholder confidence</p>
-            </div>
+            <p class="section-subtitle">Project Goals</p>
+            <h2>Objectives</h2>
+            <ol>
+                <li>Assess the quantum computing threat landscape and identify vulnerabilities in current cryptographic systems.</li>
+                <li>Evaluate NIST’s post-quantum cryptography standards and their practical applicability for organization.</li>
+                <li>Analyze migration strategies and implementation approaches for quantum-safe infrastructure.</li>
+                <li>Design and validate a comprehensive governance framework for post-quantum cryptography adoption.</li>
+            </ol>
         </div>
     </section>
 
-    <section id="research">
+    <section id="methodology">
         <div class="fade-in">
-            <p class="section-subtitle">Research Findings</p>
-            <h2>Evidence & Impact</h2>
+            <p class="section-subtitle">Approach</p>
+            <h2>Methodology / Approach</h2>
+            <p>This research uses a mixed-methods approach to develop and test the PQC-GF. We conducted three surveys to measure awareness and understanding of quantum threats and post-quantum cryptography. The first was a public survey to assess general awareness levels. The second survey we did a pre-session survey with a smaller group to check their baseline knowledge. After teaching them about quantum computing, post-quantum cryptography, and our framework, we gave the same group a final survey to see what they learned. This step-by-step process helped us spot knowledge gaps and see how education can help people get ready for a quantum-safe era.</p>
+            <p>We also looked at existing research and guidance from sources like NIST, COBIT 5, and ISO 27001 to help us develop our framework. The PQC-GF was built on these well-known models but also adjusted to address the unique challenges we found through our readings and surveys results.</p>
+            <p>We are using existing tools to make a comparison showing the practical differences between classical RSA encryption and post-quantum algorithms, Kyber and Dilithium. By building working prototypes of each system, we could test them side-by-side and see for ourselves that post-quantum cryptography is not just theory; it actually works and performs well enough for real applications.</p>
+            <h3>System Architecture Diagram</h3>
+            <p>(Placeholder for architecture diagram - describe the five domains as a text-based structure since no image is available in the report.)</p>
+            <ul>
+                <li>QRAS: Quantum Risk Assessment & Strategy</li>
+                <li>PQPA: Post-Quantum Planning & Architecture</li>
+                <li>IAD: Implementation & Deployment</li>
+                <li>OAM: Operations & Maintenance</li>
+                <li>CAA: Compliance & Assurance</li>
+            </ul>
+            <h3>Development Approach</h3>
+            <p>Design Science Research Approach, Knowledge Base Integration, Design Principles.</p>
+            <h3>Tools / Frameworks Used</h3>
+            <p>NIST standards, COBIT 5, ISO/IEC 27001, Python for prototypes (assumed).</p>
+            <h3>Datasets</h3>
+            <p>Survey data from 128 public respondents and 35 students.</p>
         </div>
-        <div class="research-stats fade-in">
-            <div class="stat">
-                <span class="stat-number">128</span>
-                <span class="stat-label">Public Survey Respondents</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">35</span>
-                <span class="stat-label">Cybersecurity Students</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">39.1%</span>
-                <span class="stat-label">Initial PQC Awareness</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">45.7%</span>
-                <span class="stat-label">Post-Training Awareness</span>
-            </div>
-        </div>
-        <div class="fade-in" style="margin-top: 3rem;">
-            <h3 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Key Findings</h3>
-            <ul style="font-size: 1.1rem; line-height: 2; color: #555; list-style-position: inside;">
-                <li>87.5% of respondents aware of general cybersecurity, but only 39.1% knew about post-quantum cryptography</li>
-                <li>Educational interventions significantly improved student knowledge (20% → 45.7%)</li>
-                <li>85.7% of students found the presentation useful or very useful</li>
-                <li>Prototypes demonstrated that PQC algorithms are practical and efficient</li>
+    </section>
+
+    <section id="technologies">
+        <div class="fade-in">
+            <p class="section-subtitle">Tech Stack</p>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python (for prototypes)</li>
+                <li><strong>Frameworks:</strong> CRYSTALS-Kyber, CRYSTALS-Dilithium, RSA-2048, BB84 simulation</li>
+                <li><strong>Other:</strong> NIST PQC standards, survey tools (Google Forms or similar)</li>
             </ul>
         </div>
     </section>
 
-    <section id="prototypes">
+    <section id="results">
         <div class="fade-in">
-            <p class="section-subtitle">Technical Validation</p>
-            <h2>Cryptographic Prototypes</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #555;">
-                Four working prototypes demonstrating classical and post-quantum encryption systems.
-            </p>
-        </div>
-        <div class="prototype-grid fade-in">
-            <div class="prototype-card">
-                <div class="prototype-header">CRYSTALS-Kyber (ML-KEM-512)</div>
-                <div class="prototype-body">
-                    <h4>Post-Quantum Key Encapsulation</h4>
-                    <p>Quantum-resistant key exchange with text and image encryption in under 20 milliseconds.</p>
-                    <p style="margin-top: 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: var(--secondary);">
-                        NIST-standardized lattice-based cryptography
-                    </p>
-                </div>
-            </div>
-            <div class="prototype-card">
-                <div class="prototype-header">CRYSTALS-Dilithium (ML-DSA-65)</div>
-                <div class="prototype-body">
-                    <h4>Digital Signatures</h4>
-                    <p>Authenticated encryption with digital signatures for data integrity in 127-167 milliseconds.</p>
-                    <p style="margin-top: 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: var(--secondary);">
-                        NIST-standardized signature algorithm
-                    </p>
-                </div>
-            </div>
-            <div class="prototype-card">
-                <div class="prototype-header">RSA-2048</div>
-                <div class="prototype-body">
-                    <h4>Classical Cryptography</h4>
-                    <p>Traditional public-key encryption with hybrid approach for larger files. Baseline comparison.</p>
-                    <p style="margin-top: 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: var(--secondary);">
-                        Current industry standard (quantum-vulnerable)
-                    </p>
-                </div>
-            </div>
-            <div class="prototype-card">
-                <div class="prototype-header">BB84 QKD</div>
-                <div class="prototype-body">
-                    <h4>Quantum Key Distribution</h4>
-                    <p>Simulated quantum cryptography with QR code-based key distribution demonstrating QKD principles.</p>
-                    <p style="margin-top: 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: var(--secondary);">
-                        Quantum communication protocol simulation
-                    </p>
-                </div>
-            </div>
+            <p class="section-subtitle">Outcomes</p>
+            <h2>Results</h2>
+            <p>Key findings from surveys and prototypes.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Pre-Presentation</th>
+                        <th>Post-Presentation</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Awareness of PQC Importance</td>
+                        <td>20.0%</td>
+                        <td>45.7%</td>
+                        <td>+25.7%</td>
+                    </tr>
+                    <tr>
+                        <td>Can Name PQC Algorithm</td>
+                        <td>~0%</td>
+                        <td>42.9%</td>
+                        <td>+42.9%</td>
+                    </tr>
+                    <tr>
+                        <td>Understand Governance Role in PQC</td>
+                        <td>Not measured</td>
+                        <td>57.1%</td>
+                        <td>New insight</td>
+                    </tr>
+                    <tr>
+                        <td>Believe Frameworks Help Transition</td>
+                        <td>Not measured</td>
+                        <td>42.9%</td>
+                        <td>New insight</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Screenshots/Graphs: (Placeholder for survey charts - e.g., bar charts from report tables.)</p>
+            <!-- Add more tables from report, e.g., Table 12, 13, 14 -->
         </div>
     </section>
 
-    <section id="team">
+    <section id="demo">
         <div class="fade-in">
-            <p class="section-subtitle">Our Team</p>
-            <h2>Researchers</h2>
-        </div>
-        <div class="team-grid fade-in">
-            <div class="team-member">
-                <h3>Maryam Rashed Alkawari</h3>
-                <p>202103597</p>
-                <div class="contact-links">
-                    <a href="mailto:maryam.r.alkuwari@gmail.com"><i class="fas fa-envelope"></i> maryam.r.alkuwari@gmail.com</a>
-                    <br>
-                    <a href="https://www.linkedin.com/in/maryam-alkuwari-5a2a5836b" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
+            <p class="section-subtitle">Demonstration</p>
+            <h2>Demo</h2>
+            <div class="video-placeholder">
+                <p>Placeholder for Elevator Pitch Video (1-3 min). Embed YouTube video here.</p>
             </div>
-
-            <div class="team-member">
-                <h3>Saeeda Mohammed Alansari</h3>
-                <p>202106563</p>
-                <div class="contact-links">
-                    <a href="mailto:saeedaalansary@gmail.com"><i class="fas fa-envelope"></i> saeedaalansary@gmail.com</a>
-                    <br>
-                    <a href="https://www.linkedin.com/in/saeeda-alansari-8221942a0" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <h3>Danah Mohammed Alkhan</h3>
-                <p>202100476</p>
-                <div class="contact-links">
-                    <a href="mailto:danah.m.alkhan@gmail.com"><i class="fas fa-envelope"></i> danah.m.alkhan@gmail.com</a>
-                    <br>
-                    <a href="https://www.linkedin.com/in/danah-mohammed-alkhan" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
-            </div>
+            <p>Optional: GIF walkthroughs of prototypes or live demo link.</p>
         </div>
+    </section>
 
-        <div class="fade-in" style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
-            <h3 style="font-family: 'Playfair Display', serif; color: var(--primary); font-size: 1.5rem; margin-bottom: 1rem;">Project Supervisor</h3>
-            <p style="font-size: 1.2rem; color: var(--secondary);">Dr. Alya Sayed Alkameli</p>
-            <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; color: #777; margin-top: 0.5rem;">Computer Science Department</p>
+    <section id="conclusion">
+        <div class="fade-in">
+            <p class="section-subtitle">Summary & Next Steps</p>
+            <h2>Conclusion & Future Work</h2>
+            <h3>Conclusion</h3>
+            <p>This research addresses an essential gap in organizational quantum readiness through the creation of the Post-Quantum Cryptography Governance Framework (PQC-GF). With the advancement of quantum computers to breach widely used encryption algorithms such as RSA and ECC, there arises an emergent need in organizations to effectively navigate through the process of migrating towards quantum resistant cryptography. Although standards have already been outlined by NIST in 2024 regarding post-quantum algorithms, today there is no IT governance framework in place to offer the essential detailed support required in such a unique process.</p>
+            <p>The PQC-GF fills this gap by providing a comprehensive, five-domain framework that guides organizations through the entire post-quantum transition lifecycle. From initial quantum risk assessment through implementation, operations, and compliance assurance, the framework offers structured processes, maturity models, key performance indicators, and practical implementation guidance. Built upon established governance principles from COBIT 5, ISO 27001, and NIST frameworks while incorporating post-quantum specific requirements, the PQC-GF is designed to complement rather than replace existing governance structures.</p>
+            <p>Our research confirms the need for the framework through empirical evidence from three different surveys. In the public engagement survey, there was large awareness gap identified, where only 39.1% of respondents surveyed had heard of post-quantum cryptography, although 87.5% demonstrated understanding of basic cyber security knowledge. While in both student surveys, there was very little knowledge of post-quantum cryptography, it was 20% awareness pre-presentation, our interventions were very successful in raising knowledge to 45.7% and stimulating further interest in learning.</p>
+            <p>The cryptographic prototypes demonstrated practical viability regarding post-quantum cryptography. In particular, the performance of text encryption in less than 20 milliseconds was demonstrated by CRYSTALS-Kyber algorithm, whereas the performance of secure authenticated encryption in 130-170 milliseconds was demonstrated by CRYSTALS-Dilithium algorithm. These performance parameters emphasize that post-quantum cryptography not only revolves around theory but can also be applied in practical scenarios. The comparison of the post-quantum cryptography model with the performance standards of the RSA-2048 algorithm and the simulation test of the BB84 quantum key distribution model gives appropriate perspective into the shift from classical cryptography to post-quantum security.</p>
+            <h3>Future Work</h3>
+            <p>The PQC-GF framework needs to be tested and improved based on real-world experiences to ensure it works for organizations transiting into quantum-safe cryptography.</p>
+            <p>Testing with Real Organizations. The framework will be tested with companies from different industries, like banks, hospitals, and technology organizations, as well as organizations of different sizes, from small businesses to large corporations. Each test implementation will be documented to capture what challenges came up, the duration of each phase, what resources were needed, and what worked or did not work. This information will help create industry-specific guidance since different sectors have their unique requirements.</p>
+            <p>Long-Term Monitoring. Several organizations will be monitored over the years to finish the transition process to a quantum-safe environment. The monitoring process will help in understanding whether the predictions or forecasts made by the framework regarding the timeline and cost of transition are accurate or not. It will also help in understanding what factors lead to success in these organizations.</p>
+            <p>Constant updates. Therefore, the following five inputs will be used to continuously update the framework. First, as new standards are developed by NIST and other international standard-setting organizations, they will be included. Second, advancements in quantum computing capability must be continuously monitored in order to change the risk assessment as needed. Third, based on advancements in cryptography research, improved post-quantum algorithms will be included. Fourth, organizations using the framework will provide immediate feedback for changes. Lastly, in order to maintain firms' legal compliance, new government rules will be included.</p>
+            <!-- Add more from page 93-94 -->
         </div>
+    </section>
 
-        <div class="fade-in" style="text-align: center; margin-top: 3rem;">
-            <p style="font-size: 1.1rem; color: #555; margin-bottom: 1rem;">University of Bahrain</p>
-            <p style="font-size: 1.1rem; color: #555; margin-bottom: 1rem;">College of Information Technology</p>
-            <p style="font-size: 1.1rem; color: #555; margin-bottom: 1rem;">Department of Information Systems</p>
-            <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; color: var(--secondary);">ITCY 499 - Senior Project 2025</p>
+    <section id="about">
+        <div class="fade-in">
+            <p class="section-subtitle">Project & Team</p>
+            <h2>About the Project & Team</h2>
+            <p>This project is a Final Year Senior Project completed during Semester 1 of the Academic Year 2025/2026 at the College of Information Technology — University of Bahrain.</p>
+            <h3>Student Information</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Major</th>
+                        <th>Email</th>
+                        <th>LinkedIn</th>
+                        <th>GitHub</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maryam Rashed Alkawari</td>
+                        <td>Information Systems</td>
+                        <td>maryam.r.alkuwari@gmail.com</td>
+                        <td><a href="https://www.linkedin.com/in/maryam-alkuwari-5a2a5836b">Profile</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Saeeda Mohammed Alansari</td>
+                        <td>Information Systems</td>
+                        <td>saeedaalansary@gmail.com</td>
+                        <td><a href="https://www.linkedin.com/in/saeeda-alansari-8221942a0">Profile</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Danah Mohammed Alkhan</td>
+                        <td>Information Systems</td>
+                        <td>danah.m.alkhan@gmail.com</td>
+                        <td><a href="https://www.linkedin.com/in/danah-mohammed-alkhan">Profile</a></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Supervisor</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Rank</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ms. Alya Sayed Alkameli</td>
+                        <td>Lecturer (CS Department)</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Post-Quantum Cryptography Governance Framework Project</p>
+        <p>&copy; 2025 Post-Quantum Cryptography Governance Framework Project</p>
         <p style="margin-top: 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem;">University of Bahrain • College of Information Technology</p>
     </footer>
 
